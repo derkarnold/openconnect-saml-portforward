@@ -4,4 +4,4 @@
 select_runtime "$1" || exit 1
 
 echo "Using runtime: $RUNTIME"
-$RUNTIME run -it --rm --env-file .env -p 3389:3389 --privileged openconnect-saml-portforward
+$RUNTIME build . -t openconnect-saml-portforward
